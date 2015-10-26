@@ -11,6 +11,7 @@
 @interface NSArray (Enumeration)
 
 -(NSArray*) arrayByApplyingBlock:(id(^)(id object))block;
--(NSArray *)elementsSatisfyingBlock:(BOOL (^)(NSUInteger testNumber))predicateBlock;
+//-(NSArray *)elementsSatisfyingBlock:(BOOL (^)(NSUInteger testNumber))predicateBlock;
+-(NSArray *)elementsSatisfyingBlock:(BOOL (^)(id testNumber))predicateBlock;
 
 @end

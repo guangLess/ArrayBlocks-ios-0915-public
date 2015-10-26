@@ -28,18 +28,17 @@
 }
 
 
--(NSArray *)elementsSatisfyingBlock:(BOOL (^)(NSUInteger testNumber))predicateBlock{
-    
+//-(NSArray *)elementsSatisfyingBlock:(BOOL (^)(NSUInteger testNumber))predicateBlock{
+-(NSArray *)elementsSatisfyingBlock:(BOOL (^)(id object))predicateBlock{
+
     NSMutableArray * resultArray = [[NSMutableArray alloc] init];
     
-    for (NSString * eachNumString in self) {
+    for (id object in self) {
     
-        NSUInteger  result = eachNumString.intValue;
-        NSUInteger testNumber = result;
-        
-        BOOL passesBlock = predicateBlock(testNumber);
-        if (passesBlock){
-            [resultArray addObject:[NSString stringWithFormat:@"%lu",(unsigned long)result]];
+        //NSUInteger result = [testNumber integerValue];
+        //BOOL passesBlock = predicateBlock(testNumber);
+        if (predicateBlock(object)){
+            [resultArray addObject:object];
         }
     }
     return  resultArray;

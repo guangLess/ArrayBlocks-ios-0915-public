@@ -34,13 +34,16 @@
     NSLog(@"two times --->%@", modifiedArray);
     
     //----two--->
-    NSArray * newArray = [testArray elementsSatisfyingBlock:^BOOL(NSUInteger testNumber) {
-        NSUInteger evenNumber = testNumber % 2 ==0 ;
-        return evenNumber;
+    
+    NSArray * newArray = [testArray elementsSatisfyingBlock:^BOOL(id object) {
+        return ([object integerValue] % 2) == 0 ;
     }];
     
     NSLog(@"even Number %@", newArray);
     
     }
+
+
+
 @end
 
