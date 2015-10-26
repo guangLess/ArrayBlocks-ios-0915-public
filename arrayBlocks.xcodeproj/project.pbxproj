@@ -14,6 +14,7 @@
 		317BBDC01A012AD400E50696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317BBDBF1A012AD400E50696 /* Images.xcassets */; };
 		317BBDC31A012AD400E50696 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317BBDC11A012AD400E50696 /* LaunchScreen.xib */; };
 		5B7E811F1B8FA68700BD899C /* NSArray+EnumerationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E811E1B8FA68700BD899C /* NSArray+EnumerationSpec.m */; };
+		624E568F1BDEC580005F3C4C /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 624E568E1BDEC580005F3C4C /* NSArray+Enumeration.m */; settings = {ASSET_TAGS = (); }; };
 		E61EE866E907C8A661B120EE /* libPods-arrayBlocksTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07417A0BF7B099C34E8DEA31 /* libPods-arrayBlocksTests.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,8 @@
 		317BBDC81A012AD400E50696 /* arrayBlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arrayBlocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		317BBDCD1A012AD400E50696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7E811E1B8FA68700BD899C /* NSArray+EnumerationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumerationSpec.m"; sourceTree = "<group>"; };
+		624E568D1BDEC580005F3C4C /* NSArray+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumeration.h"; sourceTree = "<group>"; };
+		624E568E1BDEC580005F3C4C /* NSArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumeration.m"; sourceTree = "<group>"; };
 		9DD9E837BEE9B618D19CD086 /* Pods-arrayBlocksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arrayBlocksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-arrayBlocksTests/Pods-arrayBlocksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9C214B0461E33EA229F6DC6 /* Pods-arrayBlocksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arrayBlocksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-arrayBlocksTests/Pods-arrayBlocksTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,8 @@
 				317BBDB71A012AD400E50696 /* AppDelegate.m */,
 				317BBDB91A012AD400E50696 /* ViewController.h */,
 				317BBDBA1A012AD400E50696 /* ViewController.m */,
+				624E568D1BDEC580005F3C4C /* NSArray+Enumeration.h */,
+				624E568E1BDEC580005F3C4C /* NSArray+Enumeration.m */,
 				317BBDBC1A012AD400E50696 /* Main.storyboard */,
 				317BBDBF1A012AD400E50696 /* Images.xcassets */,
 				317BBDC11A012AD400E50696 /* LaunchScreen.xib */,
@@ -280,6 +285,7 @@
 			files = (
 				317BBDBB1A012AD400E50696 /* ViewController.m in Sources */,
 				317BBDB81A012AD400E50696 /* AppDelegate.m in Sources */,
+				624E568F1BDEC580005F3C4C /* NSArray+Enumeration.m in Sources */,
 				317BBDB51A012AD400E50696 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
